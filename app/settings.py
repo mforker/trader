@@ -27,7 +27,7 @@ HISTORICAL_DATA_DAYS = 180
 
 # Risk Profile for target and stop-loss calculations.
 # Options: SCALPER, SAFE, MODERATE, AGGRESSIVE, POSITIONAL, DIAMOND_HANDS
-STRATEGY_RISK_PROFILE = "SAFE"
+STRATEGY_RISK_PROFILE = "POSITIONAL"
 
 # Backtesting Global Controls
 # Set to None for Live Market Data

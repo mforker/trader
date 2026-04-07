@@ -16,3 +16,39 @@
 2026-04-07 05:29:56,058 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
 2026-04-07 05:30:00,908 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
 2026-04-07 05:30:00,911 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:30:00] "GET /calls/buy?sector=NIFTYBANK HTTP/1.1" 200 -
+2026-04-07 05:31:36,932 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-07 05:31:36,932 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-04-07 05:31:36,933 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:31:37,974 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:31:37,978 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:31:42,374 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:31:42] "GET / HTTP/1.1" 200 -
+2026-04-07 05:31:58,308 - INFO - __main__ - Initiating sequence for sector param: niftybank
+2026-04-07 05:32:02,950 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:32:02,951 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:32:02] "GET /calls/buy?sector=niftybank HTTP/1.1" 200 -
+2026-04-07 05:32:21,312 - INFO - __main__ - Initiating sequence for sector param: niftybank
+2026-04-07 05:32:26,061 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:32:26,061 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:32:26] "GET /calls/sell?sector=niftybank HTTP/1.1" 200 -
+2026-04-07 05:32:45,587 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:32:45,897 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:32:46,148 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:32:47,506 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:32:47,510 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:32:47,510 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:32:54,208 - INFO - __main__ - Initiating sequence for sector param: niftybank
+2026-04-07 05:33:00,642 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:33:00,643 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:33:00] "GET /calls/sell?sector=niftybank HTTP/1.1" 200 -
+2026-04-07 05:33:19,520 - INFO - __main__ - Initiating sequence for sector param: niftybank
+2026-04-07 05:33:24,136 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:33:24,137 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:33:24] "GET /calls/buy?sector=niftybank HTTP/1.1" 200 -
+2026-04-07 05:33:35,332 - INFO - __main__ - Initiating sequence for sector param: niftypharma
+2026-04-07 05:33:41,686 - INFO - __main__ - Analyzed 20 instruments. Discovered 17 active trade setups.
+2026-04-07 05:33:41,686 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:33:41] "GET /calls/buy?sector=niftypharma HTTP/1.1" 200 -
+2026-04-07 05:35:29,434 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:35:29,437 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:35:29,913 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:35:31,521 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:35:31,527 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:36:06,039 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:36:06,046 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:36:06,456 - INFO - werkzeug -  * Restarting with stat

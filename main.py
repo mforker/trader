@@ -50,6 +50,10 @@ def index():
         "documentation": "/apidocs/"
     })
 
+class InvalidSectorError(Exception):
+    """Raised when an unrecognisable sector or no input is provided."""
+    pass
+
 def _generate_calls_data():
     sector_param = request.args.get('sector')
     instruments_param = request.args.get('instruments')
@@ -57,14 +61,134 @@ def _generate_calls_data():
     if not sector_param and not instruments_param:
         sector_param = settings.DEFAULT_SECTOR
         
+    # Alias map for natural language inputs that don't substring-match NSE key names
+    SECTOR_ALIASES = {
+        # Private Bank
+        "PRIVATEBANK": "NIFTYPVTBANK",
+        "PVTBANK": "NIFTYPVTBANK",
+        "PRIVATEBANKINDEX": "NIFTYPVTBANK",
+        "PRIVATE": "NIFTYPVTBANK",
+        "PRIVBANK": "NIFTYPVTBANK",
+        # PSU Bank
+        "PSUBANK": "NIFTYPSUBANK",
+        "PSU": "NIFTYPSUBANK",
+        "PUBLICSECTORBANK": "NIFTYPSUBANK",
+        "PUBLICBANK": "NIFTYPSUBANK",
+        "GOVTBANK": "NIFTYPSUBANK",
+        "STATEBANK": "NIFTYPSUBANK",
+        # Banking (general)
+        "BANK": "NIFTYBANK",
+        "BANKING": "NIFTYBANK",
+        "BANKINDEX": "NIFTYBANK",
+        "BANKNIFTY": "NIFTYBANK",
+        "BANKS": "NIFTYBANK",
+        # IT
+        "IT": "NIFTYIT",
+        "TECH": "NIFTYIT",
+        "TECHNOLOGY": "NIFTYIT",
+        "INFORMATIONTECHNOLOGY": "NIFTYIT",
+        "INFOTECH": "NIFTYIT",
+        "SOFTWARE": "NIFTYIT",
+        "TECHINDEX": "NIFTYIT",
+        # Pharma
+        "PHARMA": "NIFTYPHARMA",
+        "PHARMACEUTICAL": "NIFTYPHARMA",
+        "PHARMACEUTICALS": "NIFTYPHARMA",
+        "HEALTHCARE": "NIFTYPHARMA",
+        "HEALTH": "NIFTYPHARMA",
+        "MEDICINE": "NIFTYPHARMA",
+        # FMCG
+        "FMCG": "NIFTYFMCG",
+        "CONSUMERGOOD": "NIFTYFMCG",
+        "CONSUMERGOODS": "NIFTYFMCG",
+        "CONSUMER": "NIFTYFMCG",
+        "FASTMOVING": "NIFTYFMCG",
+        "STAPLES": "NIFTYFMCG",
+        # Auto
+        "AUTO": "NIFTYAUTO",
+        "AUTOMOBILE": "NIFTYAUTO",
+        "AUTOMOBILES": "NIFTYAUTO",
+        "AUTOMOTIVE": "NIFTYAUTO",
+        "VEHICLES": "NIFTYAUTO",
+        "CAR": "NIFTYAUTO",
+        "EV": "NIFTYAUTO",
+        # Realty
+        "REALTY": "NIFTYREALTY",
+        "REAL": "NIFTYREALTY",
+        "REALESTATE": "NIFTYREALTY",
+        "REALTYINDEX": "NIFTYREALTY",
+        "PROPERTY": "NIFTYREALTY",
+        "HOUSING": "NIFTYREALTY",
+        # Smallcap
+        "SMALLCAP": "NIFTYSMALLCAP250",
+        "SMALLCAP250": "NIFTYSMALLCAP250",
+        "SMALL": "NIFTYSMALLCAP250",
+        "SMALLCAPINDEX": "NIFTYSMALLCAP250",
+        # Midcap
+        "MIDCAP": "NIFTYMIDCAP150",
+        "MIDCAP150": "NIFTYMIDCAP150",
+        "MID": "NIFTYMIDCAP150",
+        "MIDCAPINDEX": "NIFTYMIDCAP150",
+        # Largecap
+        "LARGECAP": "NIFTY100_LARGECAP",
+        "LARGE": "NIFTY100_LARGECAP",
+        "NIFTY100": "NIFTY100_LARGECAP",
+        "LARGECAPINDEX": "NIFTY100_LARGECAP",
+        "TOP100": "NIFTY100_LARGECAP",
+        # Nifty 50
+        "NIFTY": "NIFTY50",
+        "NIFTY50INDEX": "NIFTY50",
+        "TOP50": "NIFTY50",
+        "N50": "NIFTY50",
+        # Chemicals
+        "CHEMICAL": "CHEMICALS",
+        "CHEM": "CHEMICALS",
+        "SPECIALTY": "CHEMICALS",
+        # Cement
+        "CEMENT": "CEMENT",
+        "INFRASTRUCTURE": "CEMENT",
+        "INFRA": "CEMENT",
+        "CONSTRUCTION": "CEMENT",
+    }
+
     if sector_param and sector_param.upper() == "ALL":
+        seen = set()
         instruments = []
         for s in SECTORS.values():
-            instruments.extend(s)
-    elif sector_param and sector_param.upper() in SECTORS:
-        instruments = SECTORS[sector_param.upper()]
-    else:
+            for i in s:
+                if i not in seen:
+                    seen.add(i)
+                    instruments.append(i)
+    elif sector_param:
+        sector_key = sector_param.upper()
+        # 1. Check alias map first
+        if sector_key in SECTOR_ALIASES:
+            sector_key = SECTOR_ALIASES[sector_key]
+        # 2. Exact match
+        if sector_key not in SECTORS:
+            # 3. Fuzzy substring match as last resort
+            matches = [k for k in SECTORS.keys() if sector_key in k]
+            sector_key = matches[0] if matches else None
+        
+        if sector_key and sector_key in SECTORS:
+            instruments = SECTORS[sector_key]
+            sector_param = sector_key  # normalize for logging
+        elif instruments_param:
+            instruments = [i.strip() for i in instruments_param.split(',')]
+        else:
+            available = sorted(list(SECTORS.keys()) + ["ALL"])
+            raise InvalidSectorError(
+                f"Unknown sector '{sector_param}'. "
+                f"Try one of: {', '.join(available)}. "
+                f"Or use common names like 'bank', 'it', 'pharma', 'fmcg', 'auto', 'smallcap', 'midcap', 'largecap', 'privatebank', 'psubank', 'realty'."
+            )
+    elif instruments_param:
         instruments = [i.strip() for i in instruments_param.split(',')]
+    else:
+        raise InvalidSectorError(
+            "No sector or instruments provided. "
+            "Add ?sector=NIFTY50 or ?sector=bank to your request."
+        )
     logger.info(f"Initiating sequence for sector param: {sector_param}")
     
     macro_context = get_macro_state()
@@ -161,7 +285,10 @@ def get_swagger_schema(title, description):
 @app.route('/calls/buy', methods=['GET'])
 @swag_from(get_swagger_schema("Get ONLY BUY calls", "Analyzes historical data via Upstox API using Advanced Swing Strategy. Returns exclusively elements with signal BUY."))
 def get_buy_calls():
-    data = _generate_calls_data()
+    try:
+        data = _generate_calls_data()
+    except InvalidSectorError as e:
+        return jsonify({"error": str(e)}), 400
     buy_calls = [r for r in data["results"] if r.get('signal') == 'BUY']
     return jsonify({
         "macro_evaluation": format_macro_summary(data["macro_context"], data["sector_analyzed"]),
@@ -171,7 +298,10 @@ def get_buy_calls():
 @app.route('/calls/sell', methods=['GET'])
 @swag_from(get_swagger_schema("Get ONLY SELL calls", "Analyzes historical data via Upstox API using Advanced Swing Strategy. Returns exclusively elements with signal SELL."))
 def get_sell_calls():
-    data = _generate_calls_data()
+    try:
+        data = _generate_calls_data()
+    except InvalidSectorError as e:
+        return jsonify({"error": str(e)}), 400
     sell_calls = [r for r in data["results"] if r.get('signal') == 'SELL']
     return jsonify({
         "macro_evaluation": format_macro_summary(data["macro_context"], data["sector_analyzed"]),
@@ -192,9 +322,13 @@ def get_sell_calls():
 def get_all_sectors_calls():
     macro_context = get_macro_state()
     summary = {}
+    seen_instruments = set()  # Deduplicate stocks that appear in multiple indices
     for sector_name, instruments in SECTORS.items():
         results = []
         for instrument in instruments:
+            if instrument in seen_instruments:
+                continue  # Skip — already analyzed in a prior sector
+            seen_instruments.add(instrument)
             try:
                 df = fetch_historical_data(instrument, days_back=settings.HISTORICAL_DATA_DAYS)
                 signal_data = apply_swing_strategy(df, macro_context)

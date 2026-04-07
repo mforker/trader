@@ -23,11 +23,11 @@ DEFAULT_SECTOR = "ALL"
 
 # Number of days of historical data to process for technical analysis
 # We need at least 100 calendar days to securely calculate a 50-day trading EMA.
-HISTORICAL_DATA_DAYS = 180
+HISTORICAL_DATA_DAYS = 100
 
 # Risk Profile for target and stop-loss calculations.
 # Options: SCALPER, SAFE, MODERATE, AGGRESSIVE, POSITIONAL, DIAMOND_HANDS
-STRATEGY_RISK_PROFILE = "POSITIONAL"
+STRATEGY_RISK_PROFILE = "SCALPER"
 
 # Backtesting Global Controls
 # Set to None for Live Market Data

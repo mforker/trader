@@ -40,19 +40,26 @@ def get_global_news_sentiment():
         sp500 = yf.Ticker("^GSPC")
         news = sp500.news
         if not news:
-            return "NEUTRAL", 0.0
+            return "NEUTRAL", 0.0, [], 0
             
         total_polarity = 0
         valid_headlines = 0
         headlines = []
         
         for item in news:
-            title = item.get('title', '')
-            if title:
-                blob = TextBlob(title)
+            # yfinance nests article data inside item['content'] in recent versions
+            content = item.get('content', item)  # fallback to item itself for older versions
+            title = content.get('title', '')
+            summary = content.get('summary', '')
+            
+            # Combine title + summary for richer NLP signal
+            text_to_analyze = f"{title}. {summary}".strip('. ')
+            if text_to_analyze:
+                blob = TextBlob(text_to_analyze)
                 total_polarity += blob.sentiment.polarity
                 valid_headlines += 1
-                headlines.append(title)
+                if title:
+                    headlines.append(title)
                 
         if valid_headlines == 0:
             return "NEUTRAL", 0.0, [], 0
@@ -66,8 +73,8 @@ def get_global_news_sentiment():
             return "POSITIVE", avg_polarity, headlines[:5], valid_headlines
         else:
             return "NEUTRAL", avg_polarity, headlines[:5], valid_headlines
-    except:
-        return "NEUTRAL", 0.0, [], 0
+    except Exception as e:
+        return "NEUTRAL", 0.0, [f"News fetch error: {str(e)}"], 0
 
 def get_macro_state():
     """

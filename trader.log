@@ -52,3 +52,191 @@
 2026-04-07 05:36:06,039 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
 2026-04-07 05:36:06,046 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
 2026-04-07 05:36:06,456 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:36:08,530 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:36:08,536 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:36:08,536 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:40:05,248 - INFO - __main__ - Initiating sequence for sector param: niftypharma
+2026-04-07 05:40:12,396 - INFO - __main__ - Analyzed 20 instruments. Discovered 17 active trade setups.
+2026-04-07 05:40:12,398 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:40:12] "GET /calls/buy?sector=niftypharma HTTP/1.1" 200 -
+2026-04-07 05:40:48,127 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:40:48,138 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\global_macro.py', reloading
+2026-04-07 05:40:48,826 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:40:50,026 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:40:50,033 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:41:07,400 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
+2026-04-07 05:41:11,933 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:41:11,934 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:41:11] "GET /calls/buy?sector=NIFTYBANK HTTP/1.1" 200 -
+2026-04-07 05:41:57,134 - INFO - __main__ - Initiating sequence for sector param: niftypharma
+2026-04-07 05:42:03,469 - INFO - __main__ - Analyzed 20 instruments. Discovered 17 active trade setups.
+2026-04-07 05:42:03,470 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:42:03] "GET /calls/buy?sector=niftypharma HTTP/1.1" 200 -
+2026-04-07 05:42:36,299 - INFO - __main__ - Initiating sequence for sector param: nifty50
+2026-04-07 05:42:49,655 - INFO - __main__ - Analyzed 50 instruments. Discovered 44 active trade setups.
+2026-04-07 05:42:49,656 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:42:49] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-07 05:44:38,304 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:44:38,309 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:44:38,787 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:44:40,608 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:44:40,613 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:45:06,990 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:45:06] "[35m[1mGET /calls/buy?sector=niftysmallcap HTTP/1.1[0m" 500 -
+2026-04-07 05:45:07,160 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:45:07] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-04-07 05:45:07,163 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:45:07] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-04-07 05:45:07,219 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:45:07] "GET /calls/buy?__debugger__=yes&cmd=resource&f=console.png&s=u3zzBDGC1a0YGkUIAlk4 HTTP/1.1" 200 -
+2026-04-07 05:45:31,487 - INFO - __main__ - Initiating sequence for sector param: niftysmallcap250
+2026-04-07 05:46:43,907 - INFO - __main__ - Analyzed 250 instruments. Discovered 195 active trade setups.
+2026-04-07 05:46:43,910 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:46:43] "GET /calls/buy?sector=niftysmallcap250 HTTP/1.1" 200 -
+2026-04-07 05:49:34,897 - INFO - __main__ - Successfully fetched calls across all isolated sectors.
+2026-04-07 05:49:34,901 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:49:34] "GET /calls/all-sectors HTTP/1.1" 200 -
+2026-04-07 05:50:29,473 - INFO - __main__ - Successfully fetched calls across all isolated sectors.
+2026-04-07 05:50:29,491 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:50:29] "GET /calls/all-sectors HTTP/1.1" 200 -
+2026-04-07 05:53:44,833 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 05:53:45,560 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 05:53:45,917 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:53:47,581 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:53:47,588 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:53:47,588 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:54:42,040 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:54:42,048 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:54:42,328 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:54:43,866 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:54:43,869 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:54:43,869 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:55:00,676 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:55:00,680 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:55:00,884 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 05:55:02,396 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:55:02,398 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:55:02,399 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:55:15,139 - INFO - __main__ - Initiating sequence for sector param: ALL
+2026-04-07 05:56:02,908 - INFO - __main__ - Initiating sequence for sector param: niftypharma
+2026-04-07 05:56:09,741 - INFO - __main__ - Analyzed 20 instruments. Discovered 16 active trade setups.
+2026-04-07 05:56:09,747 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:56:09] "GET /calls/buy?sector=niftypharma HTTP/1.1" 200 -
+2026-04-07 05:58:24,621 - INFO - __main__ - Analyzed 660 instruments. Discovered 520 active trade setups.
+2026-04-07 05:58:24,633 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:58:24] "GET /calls/buy HTTP/1.1" 200 -
+2026-04-07 06:06:46,591 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:06:46,996 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:06:47,056 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:06:49,335 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:06:49,344 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:06:54,257 - INFO - __main__ - Initiating sequence for sector param: niftypharma
+2026-04-07 06:07:01,003 - INFO - __main__ - Analyzed 20 instruments. Discovered 16 active trade setups.
+2026-04-07 06:07:01,004 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:07:01] "GET /calls/buy?sector=niftypharma HTTP/1.1" 200 -
+2026-04-07 06:07:14,294 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:07:14] "[35m[1mGET /calls/buy?sector=fmcg HTTP/1.1[0m" 500 -
+2026-04-07 06:07:14,436 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:07:14] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-04-07 06:07:14,437 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:07:14] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-04-07 06:07:14,478 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:07:14] "GET /calls/buy?__debugger__=yes&cmd=resource&f=console.png&s=Vvt7nUPIGB2FUZCESv1W HTTP/1.1" 200 -
+2026-04-07 06:08:19,610 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:08:19,617 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:08:20,091 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:08:21,864 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:08:21,864 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:08:21,870 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:08:21,870 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:09:09,669 - INFO - __main__ - Initiating sequence for sector param: NIFTYFMCG
+2026-04-07 06:09:14,383 - INFO - __main__ - Analyzed 15 instruments. Discovered 14 active trade setups.
+2026-04-07 06:09:14,384 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:09:14] "GET /calls/buy?sector=fmcg HTTP/1.1" 200 -
+2026-04-07 06:09:35,167 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:09:35] "[35m[1mGET /calls/buy?sector=privatebank HTTP/1.1[0m" 500 -
+2026-04-07 06:09:35,293 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:09:35] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-04-07 06:09:35,294 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:09:35] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-04-07 06:09:35,318 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:09:35] "GET /calls/buy?__debugger__=yes&cmd=resource&f=console.png&s=XPK8cjDou2mAMqoRcGRs HTTP/1.1" 200 -
+2026-04-07 06:10:47,076 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:10:47,084 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:10:47,737 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:10:49,746 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:10:49,746 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:10:49,754 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:12:04,011 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:12:04,015 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:12:04,381 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:12:05,832 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:12:05,835 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:12:05,835 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:12:56,288 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:12:56] "[35m[1mGET /calls/buy?sector=jbjhb HTTP/1.1[0m" 500 -
+2026-04-07 06:12:56,464 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:12:56] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-04-07 06:12:56,465 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:12:56] "[36mGET /calls/buy?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-04-07 06:12:56,502 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:12:56] "GET /calls/buy?__debugger__=yes&cmd=resource&f=console.png&s=aO39AEJH4FEyQNrGCzvs HTTP/1.1" 200 -
+2026-04-07 06:14:13,465 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:14:13,464 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:14:13,859 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:14:15,631 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:14:15,636 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:14:18,558 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:14:18] "[31m[1mGET /calls/buy?sector=jbjhb HTTP/1.1[0m" 400 -
+2026-04-07 06:14:26,808 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
+2026-04-07 06:14:31,032 - INFO - __main__ - Analyzed 14 instruments. Discovered 8 active trade setups.
+2026-04-07 06:14:31,033 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:14:31] "GET /calls/buy?sector=bank HTTP/1.1" 200 -
+2026-04-07 06:15:01,941 - INFO - __main__ - Initiating sequence for sector param: NIFTYPSUBANK
+2026-04-07 06:15:04,929 - INFO - __main__ - Analyzed 12 instruments. Discovered 8 active trade setups.
+2026-04-07 06:15:04,929 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:15:04] "GET /calls/buy?sector=psu HTTP/1.1" 200 -
+2026-04-07 06:15:15,456 - INFO - __main__ - Initiating sequence for sector param: NIFTY50
+2026-04-07 06:15:27,335 - INFO - __main__ - Analyzed 50 instruments. Discovered 32 active trade setups.
+2026-04-07 06:15:27,336 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:15:27] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-07 06:16:18,533 - INFO - __main__ - Initiating sequence for sector param: NIFTY50
+2026-04-07 06:16:30,637 - INFO - __main__ - Analyzed 50 instruments. Discovered 32 active trade setups.
+2026-04-07 06:16:30,638 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:16:30] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-07 06:16:31,679 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:31,688 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:32,129 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:16:33,894 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:33,901 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:36,077 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:36,083 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:36,324 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:16:37,535 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:37,535 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:37,537 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:44,937 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:44,938 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:45,161 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:16:46,398 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:46,401 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:46,401 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:51,704 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:51,721 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:16:51,969 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:16:53,146 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:53,148 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:16:53,148 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:53,150 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:16:57,441 - INFO - __main__ - Initiating sequence for sector param: NIFTY50
+2026-04-07 06:17:11,361 - INFO - __main__ - Analyzed 50 instruments. Discovered 44 active trade setups.
+2026-04-07 06:17:11,362 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:17:11] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-07 06:17:18,415 - INFO - __main__ - Initiating sequence for sector param: NIFTY50
+2026-04-07 06:17:30,889 - INFO - __main__ - Analyzed 50 instruments. Discovered 44 active trade setups.
+2026-04-07 06:17:30,889 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:17:30] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-07 06:19:37,407 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:19:37] "[31m[1mGET /calls/buy?sector=PRIVATE%20BANKS HTTP/1.1[0m" 400 -
+2026-04-07 06:20:14,912 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:20:14] "[31m[1mGET /calls/buy?sector=privatebank HTTP/1.1[0m" 400 -
+2026-04-07 06:20:23,733 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:20:23] "[31m[1mGET /calls/buy?sector=privatebank HTTP/1.1[0m" 400 -
+2026-04-07 06:20:34,456 - INFO - __main__ - Initiating sequence for sector param: CHEMICALS
+2026-04-07 06:20:37,573 - INFO - __main__ - Analyzed 7 instruments. Discovered 7 active trade setups.
+2026-04-07 06:20:37,574 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:20:37] "GET /calls/buy?sector=CHEMICALS HTTP/1.1" 200 -
+2026-04-07 06:20:43,894 - INFO - __main__ - Initiating sequence for sector param: CEMENT
+2026-04-07 06:20:46,816 - INFO - __main__ - Analyzed 7 instruments. Discovered 7 active trade setups.
+2026-04-07 06:20:46,817 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:20:46] "GET /calls/buy?sector=cement HTTP/1.1" 200 -
+2026-04-07 06:20:53,923 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
+2026-04-07 06:20:58,864 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 06:20:58,864 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:20:58] "GET /calls/buy?sector=bank HTTP/1.1" 200 -
+2026-04-07 06:21:12,972 - INFO - __main__ - Initiating sequence for sector param: NIFTYIT
+2026-04-07 06:21:16,741 - INFO - __main__ - Analyzed 10 instruments. Discovered 9 active trade setups.
+2026-04-07 06:21:16,741 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:21:16] "GET /calls/buy?sector=it HTTP/1.1" 200 -
+2026-04-07 06:21:23,243 - INFO - __main__ - Initiating sequence for sector param: NIFTYREALTY
+2026-04-07 06:21:27,037 - INFO - __main__ - Analyzed 10 instruments. Discovered 9 active trade setups.
+2026-04-07 06:21:27,037 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:21:27] "GET /calls/buy?sector=REALTY HTTP/1.1" 200 -
+2026-04-07 06:21:32,833 - INFO - __main__ - Initiating sequence for sector param: ALL
+2026-04-07 06:24:41,875 - INFO - __main__ - Analyzed 660 instruments. Discovered 542 active trade setups.
+2026-04-07 06:24:41,877 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:24:41] "GET /calls/buy?sector=ALL HTTP/1.1" 200 -
+2026-04-07 06:53:16,467 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:53:16,477 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-07 06:53:17,094 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:53:19,261 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:53:19,267 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:53:19,267 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:53:21,432 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:53:21,450 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 06:53:21,680 - INFO - werkzeug -  * Restarting with stat
+2026-04-07 06:53:22,827 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:53:22,827 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 06:53:22,830 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:53:22,830 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 06:53:24,714 - INFO - __main__ - Initiating sequence for sector param: ALL
+2026-04-07 06:55:42,649 - INFO - __main__ - Analyzed 501 instruments. Discovered 400 active trade setups.
+2026-04-07 06:55:42,674 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 06:55:42] "GET /calls/buy?sector=ALL HTTP/1.1" 200 -
+2026-04-07 06:57:59,605 - INFO - __main__ - Initiating sequence for sector param: ALL

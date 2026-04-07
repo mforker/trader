@@ -1,0 +1,18 @@
+2026-04-07 05:28:48,475 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:28:48,478 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:28:48,555 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:28:48,558 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:28:55,836 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:28:55,899 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading
+2026-04-07 05:28:57,200 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:28:57,203 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:28:57,277 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:28:57,280 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:29:19,131 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\strategy.py', reloading
+2026-04-07 05:29:19,154 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\strategy.py', reloading
+2026-04-07 05:29:20,946 - WARNING - werkzeug -  * Debugger is active!
+2026-04-07 05:29:20,948 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:29:20,948 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-07 05:29:56,058 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
+2026-04-07 05:30:00,908 - INFO - __main__ - Analyzed 14 instruments. Discovered 14 active trade setups.
+2026-04-07 05:30:00,911 - INFO - werkzeug - 127.0.0.1 - - [07/Apr/2026 05:30:00] "GET /calls/buy?sector=NIFTYBANK HTTP/1.1" 200 -

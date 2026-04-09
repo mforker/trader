@@ -66,3 +66,46 @@ def fetch_historical_data(instrument_key: str, days_back: int = 60) -> pd.DataFr
         df[col] = pd.to_numeric(df[col], errors='coerce')
         
     return df
+
+def fetch_intraday_data(instrument_key: str, interval: str = "1minute") -> pd.DataFrame:
+    """
+    Fetches intraday live/historical candle data from Upstox API for a given instrument.
+    Valid intervals include '1minute', '3minute', '5minute', '15minute', '30minute'.
+    """
+    token = get_upstox_token()
+    if not token:
+        raise ValueError("Sandbox token not found in .env file")
+
+    headers = {
+        'Accept': 'application/json',
+        'Authorization': f'Bearer {token}'
+    }
+    
+    # Intraday endpoint provides the candles for the current day up to the last completed minute
+    url = f"{UPSTOX_API_URL}/historical-candle/intraday/{instrument_key}/{interval}"
+    
+    response = requests.get(url, headers=headers)
+    
+    if response.status_code != 200:
+        print(f"Error fetching intraday data for {instrument_key}: {response.text}")
+        return pd.DataFrame()
+        
+    data = response.json()
+    if "data" not in data or not data["data"] or "candles" not in data["data"]:
+        return pd.DataFrame()
+        
+    candles = data["data"]["candles"]
+    
+    # Upstox returns data as: [timestamp, open, high, low, close, volume, open_interest]
+    df = pd.DataFrame(candles, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume', 'open_interest'])
+    
+    # Sort from oldest to newest for the day
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    df = df.sort_values('timestamp').reset_index(drop=True)
+    
+    # Convert types to numeric
+    cols_to_convert = ['open', 'high', 'low', 'close', 'volume']
+    for col in cols_to_convert:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+        
+    return df

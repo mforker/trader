@@ -1,0 +1,181 @@
+📊 <b>Swing Setups Found (02:26)</b> 📊
+
+<b>SELL</b>: ASIANPAINT at ₹2269.6
+Target: ₹2946.55 | SL: ₹1931.12
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (2269.6) severely broke structure beneath its core 50-day EMA support (2342.4). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: BAJFINANCE at ₹903.25
+Target: ₹1251.28 | SL: ₹729.24
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (903.25) severely broke structure beneath its core 50-day EMA support (912.5). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: BAJAJFINSV at ₹1767.7
+Target: ₹2317.45 | SL: ₹1492.82
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1767.7) severely broke structure beneath its core 50-day EMA support (1845.1). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: BHARTIARTL at ₹1859.4
+Target: ₹2311.76 | SL: ₹1633.22
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1859.4) severely broke structure beneath its core 50-day EMA support (1896.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: CIPLA at ₹1224.4
+Target: ₹1509.55 | SL: ₹1081.83
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1224.4) severely broke structure beneath its core 50-day EMA support (1302.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: DRREDDY at ₹1211.9
+Target: ₹1570.97 | SL: ₹1032.36
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1211.9) severely broke structure beneath its core 50-day EMA support (1259.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: EICHERMOT at ₹7147.5
+Target: ₹9598.08 | SL: ₹5922.21
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (7147.5) severely broke structure beneath its core 50-day EMA support (7183.9). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: ETERNAL at ₹237.89
+Target: ₹339.14 | SL: ₹187.26
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (237.89) severely broke structure beneath its core 50-day EMA support (248.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: HCLTECH at ₹1464.9
+Target: ₹1898.57 | SL: ₹1248.06
+Reason: Strategy Evaluation: Exit signaled immediately because the price directly rejected the heavy statistical resistance of the Upper Bollinger Band (1456.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: HDFCBANK at ₹797.7
+Target: ₹1058.24 | SL: ₹667.43
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (797.7) severely broke structure beneath its core 50-day EMA support (849.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: HDFCLIFE at ₹591.2
+Target: ₹774.25 | SL: ₹499.68
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (591.2) severely broke structure beneath its core 50-day EMA support (658.0). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: HINDUNILVR at ₹2133.2
+Target: ₹2684.91 | SL: ₹1857.35
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (2133.2) severely broke structure beneath its core 50-day EMA support (2211.9). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: ICICIBANK at ₹1281.3
+Target: ₹1625.95 | SL: ₹1108.97
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1281.3) severely broke structure beneath its core 50-day EMA support (1308.5). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: ITC at ₹303.0
+Target: ₹366.16 | SL: ₹271.42
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (303.0) severely broke structure beneath its core 50-day EMA support (314.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: INFY at ₹1331.6
+Target: ₹1723.77 | SL: ₹1135.52
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1331.6) severely broke structure beneath its core 50-day EMA support (1365.5). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: INDIGO at ₹4449.1
+Target: ₹6511.48 | SL: ₹3417.91
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (4449.1) severely broke structure beneath its core 50-day EMA support (4504.4). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: JIOFIN at ₹238.84
+Target: ₹322.17 | SL: ₹197.18
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (238.84) severely broke structure beneath its core 50-day EMA support (249.1). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: KOTAKBANK at ₹371.9
+Target: ₹480.7 | SL: ₹317.5
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (371.9) severely broke structure beneath its core 50-day EMA support (391.8). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: M&M at ₹3166.8
+Target: ₹4273.0 | SL: ₹2613.7
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (3166.8) severely broke structure beneath its core 50-day EMA support (3271.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: MARUTI at ₹13589.0
+Target: ₹17828.94 | SL: ₹11469.03
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (13589.0) severely broke structure beneath its core 50-day EMA support (13942.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: MAXHEALTH at ₹954.95
+Target: ₹1228.04 | SL: ₹818.41
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (954.95) severely broke structure beneath its core 50-day EMA support (1002.8). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: NESTLEIND at ₹1228.7
+Target: ₹1523.83 | SL: ₹1081.13
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1228.7) severely broke structure beneath its core 50-day EMA support (1242.8). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: RELIANCE at ₹1330.0
+Target: ₹1684.79 | SL: ₹1152.61
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1330.0) severely broke structure beneath its core 50-day EMA support (1403.0). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: SBILIFE at ₹1904.0
+Target: ₹2451.51 | SL: ₹1630.25
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1904.0) severely broke structure beneath its core 50-day EMA support (1940.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: SBIN at ₹1040.95
+Target: ₹1386.25 | SL: ₹868.3
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1040.95) severely broke structure beneath its core 50-day EMA support (1074.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: SUNPHARMA at ₹1717.1
+Target: ₹2158.57 | SL: ₹1496.37
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1717.1) severely broke structure beneath its core 50-day EMA support (1739.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: TCS at ₹2589.0
+Target: ₹3257.44 | SL: ₹2254.78
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (2589.0) severely broke structure beneath its core 50-day EMA support (2645.6). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: TATACONSUM at ₹1078.0
+Target: ₹1367.79 | SL: ₹933.1
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (1078.0) severely broke structure beneath its core 50-day EMA support (1101.6). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: TMPV at ₹333.25
+Target: ₹455.24 | SL: ₹272.26
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (333.25) severely broke structure beneath its core 50-day EMA support (338.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: TATASTEEL at ₹205.2
+Target: ₹270.58 | SL: ₹172.51
+Reason: Strategy Evaluation: Exit signaled immediately because the price directly rejected the heavy statistical resistance of the Upper Bollinger Band (204.2). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: TITAN at ₹4439.8
+Target: ₹5730.12 | SL: ₹3794.64
+Reason: Strategy Evaluation: Exit signaled immediately because the price directly rejected the heavy statistical resistance of the Upper Bollinger Band (4422.6). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: ULTRACEMCO at ₹11448.0
+Target: ₹15186.51 | SL: ₹9578.74
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (11448.0) severely broke structure beneath its core 50-day EMA support (11655.0). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: WIPRO at ₹202.87
+Target: ₹257.98 | SL: ₹175.32
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (202.87) severely broke structure beneath its core 50-day EMA support (209.6). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: AUBANK at ₹963.0
+Target: ₹1327.36 | SL: ₹780.82
+Reason: Strategy Evaluation: Exit signaled immediately because the price directly rejected the heavy statistical resistance of the Upper Bollinger Band (962.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: BANKBARODA at ₹274.24
+Target: ₹375.06 | SL: ₹223.83
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (274.24) severely broke structure beneath its core 50-day EMA support (283.6). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: CANBK at ₹137.91
+Target: ₹192.12 | SL: ₹110.8
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (137.91) severely broke structure beneath its core 50-day EMA support (141.4). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: FEDERALBNK at ₹283.3
+Target: ₹376.08 | SL: ₹236.91
+Reason: Strategy Evaluation: Exit signaled immediately because the price directly rejected the heavy statistical resistance of the Upper Bollinger Band (283.1). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: IDFCFIRSTB at ₹65.28
+Target: ₹89.52 | SL: ₹53.16
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (65.28) severely broke structure beneath its core 50-day EMA support (70.3). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: INDUSINDBK at ₹814.55
+Target: ₹1129.72 | SL: ₹656.96
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (814.55) severely broke structure beneath its core 50-day EMA support (856.0). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: PNB at ₹109.59
+Target: ₹151.86 | SL: ₹88.46
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (109.59) severely broke structure beneath its core 50-day EMA support (115.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: YESBANK at ₹18.93
+Target: ₹24.63 | SL: ₹16.08
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (18.93) severely broke structure beneath its core 50-day EMA support (19.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: BANKINDIA at ₹144.29
+Target: ₹208.17 | SL: ₹112.35
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (144.29) severely broke structure beneath its core 50-day EMA support (152.8). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: CENTRALBK at ₹35.02
+Target: ₹47.3 | SL: ₹28.88
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (35.02) severely broke structure beneath its core 50-day EMA support (35.8). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: PSB at ₹24.16
+Target: ₹33.77 | SL: ₹19.35
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (24.16) severely broke structure beneath its core 50-day EMA support (24.7). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.
+
+<b>SELL</b>: UCOBANK at ₹25.69
+Target: ₹35.47 | SL: ₹20.8
+Reason: Strategy Evaluation: Exit signaled immediately because the current price (25.69) severely broke structure beneath its core 50-day EMA support (26.5). Global/National News Context: Overall macro state is assessed as BEARISH with AI news sentiment highlighting NEUTRAL conditions. Holding this stock further carries exceptional risk down to the baseline. Action: Liquidating under current profile protocols.

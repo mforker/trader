@@ -532,3 +532,200 @@
 2026-04-10 01:21:42,740 - INFO - werkzeug -  * Debugger PIN: 173-497-809
 2026-04-10 01:22:09,892 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
 2026-04-10 01:22:10,102 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:22:11,169 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:22:11,171 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:23:15,532 - INFO - __main__ - Initiating sequence for sector param: NIFTY50
+2026-04-10 01:23:21,639 - INFO - __main__ - Initiating sequence for sector param: NIFTYIT
+2026-04-10 01:23:25,559 - INFO - __main__ - Analyzed 10 instruments. Discovered 7 active trade setups.
+2026-04-10 01:23:25,560 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:23:25] "GET /calls/buy?sector=it HTTP/1.1" 200 -
+2026-04-10 01:23:31,037 - INFO - __main__ - Analyzed 50 instruments. Discovered 33 active trade setups.
+2026-04-10 01:23:31,038 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:23:31] "GET /calls/buy?sector=nifty50 HTTP/1.1" 200 -
+2026-04-10 01:23:39,366 - INFO - __main__ - Initiating sequence for sector param: NIFTYBANK
+2026-04-10 01:23:44,261 - INFO - __main__ - Analyzed 14 instruments. Discovered 12 active trade setups.
+2026-04-10 01:23:44,262 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:23:44] "GET /calls/buy?sector=bank HTTP/1.1" 200 -
+2026-04-10 01:23:51,412 - INFO - __main__ - Initiating sequence for sector param: ALL
+2026-04-10 01:26:06,863 - INFO - __main__ - Analyzed 501 instruments. Discovered 332 active trade setups.
+2026-04-10 01:26:06,870 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:26:06] "GET /calls/buy?sector=ALL HTTP/1.1" 200 -
+2026-04-10 01:38:18,719 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\data_fetcher.py', reloading
+2026-04-10 01:38:19,297 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:38:21,348 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:38:21,355 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:39:49,877 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 01:39:50,041 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:39:51,073 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:39:51,075 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:40:16,264 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 01:40:16,436 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:40:17,485 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:40:17,487 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:47:24,215 - INFO - main - Initiating INTRADAY sequence for sector param: NIFTYBANK
+2026-04-10 01:47:27,587 - INFO - main - Analyzed 14 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:47:41,641 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\data_fetcher.py', reloading
+2026-04-10 01:47:42,117 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:47:43,780 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:47:43,785 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:47:49,720 - INFO - __main__ - Initiating INTRADAY sequence for sector param: ALL
+2026-04-10 01:47:51,234 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 01:47:51,434 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:47:52,556 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:47:52,559 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:47:52,601 - INFO - __main__ - Initiating INTRADAY sequence for sector param: ALL
+2026-04-10 01:48:08,915 - INFO - main - Successfully fetched intraday calls across all isolated sectors.
+2026-04-10 01:48:22,831 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 01:48:23,074 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 01:48:24,335 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 01:48:24,339 - INFO - werkzeug -  * Debugger PIN: 173-497-809
+2026-04-10 01:48:24,400 - INFO - __main__ - Initiating INTRADAY sequence for sector param: ALL
+2026-04-10 01:48:32,115 - INFO - main - Initiating INTRADAY sequence for sector param: NIFTYBANK
+2026-04-10 01:48:34,370 - INFO - main - Analyzed 14 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:49:15,256 - INFO - main - Successfully fetched intraday calls across all isolated sectors.
+2026-04-10 01:49:24,683 - INFO - __main__ - Initiating INTRADAY sequence for sector param: ALL
+2026-04-10 01:49:33,413 - INFO - __main__ - Initiating INTRADAY sequence for sector param: NIFTYIT
+2026-04-10 01:49:37,935 - INFO - __main__ - Analyzed 10 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:49:37,937 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:49:37] "GET /intraday/calls/buy?sector=it HTTP/1.1" 200 -
+2026-04-10 01:49:51,044 - INFO - __main__ - Initiating INTRADAY sequence for sector param: ALL
+2026-04-10 01:50:57,678 - INFO - __main__ - Analyzed 501 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:50:57,691 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:50:57] "GET /intraday/calls/buy HTTP/1.1" 200 -
+2026-04-10 01:52:40,809 - INFO - __main__ - Analyzed 501 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:52:40,826 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:52:40] "GET /intraday/calls/buy HTTP/1.1" 200 -
+2026-04-10 01:52:53,187 - INFO - __main__ - Analyzed 501 intraday instruments. Discovered 0 active trade setups.
+2026-04-10 01:52:53,194 - INFO - werkzeug - 127.0.0.1 - - [10/Apr/2026 01:52:53] "GET /intraday/calls/buy HTTP/1.1" 200 -
+2026-04-10 02:16:21,130 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:16:21,605 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:24:25,043 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:24:25,043 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:24:25,044 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:24:25,044 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:24:25,044 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:24:25,072 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 02:24:25,072 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-04-10 02:24:25,074 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:24:26,286 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:24:26,287 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:24:26,287 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:24:26,287 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:24:26,287 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:24:26,294 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:24:26,297 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:26:00,049 - INFO - apscheduler.executors.default - Running job "scheduled_swing_job (trigger: cron[day_of_week='mon-fri', hour='2', minute='26'], next run at: 2026-04-13 02:26:00 IST)" (scheduled at 2026-04-10 02:26:00+05:30)
+2026-04-10 02:26:00,051 - INFO - apscheduler.executors.default - Running job "scheduled_swing_job (trigger: cron[day_of_week='mon-fri', hour='2', minute='26'], next run at: 2026-04-13 02:26:00 IST)" (scheduled at 2026-04-10 02:26:00+05:30)
+2026-04-10 02:26:00,060 - INFO - __main__ - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:26:00,060 - INFO - __main__ - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:26:06,548 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8520334813:AAHbq9dte6IPPN5IyymvjVHsln5W2POuxBE/sendMessage
+2026-04-10 02:26:06,549 - INFO - apscheduler.executors.default - Job "scheduled_swing_job (trigger: cron[day_of_week='mon-fri', hour='2', minute='26'], next run at: 2026-04-13 02:26:00 IST)" executed successfully
+2026-04-10 02:26:06,968 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8520334813:AAHbq9dte6IPPN5IyymvjVHsln5W2POuxBE/sendMessage
+2026-04-10 02:26:06,969 - INFO - apscheduler.executors.default - Job "scheduled_swing_job (trigger: cron[day_of_week='mon-fri', hour='2', minute='26'], next run at: 2026-04-13 02:26:00 IST)" executed successfully
+2026-04-10 02:26:31,951 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:26:32,322 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:26:34,325 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:26:34,326 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:26:34,326 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:26:34,326 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:26:34,326 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:26:34,340 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:26:34,348 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:26:41,758 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:26:41,916 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:26:43,207 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:26:43,207 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:26:43,207 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:26:43,207 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:26:43,207 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:26:43,217 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:26:43,220 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:27:00,418 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:00,419 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:00,419 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:27:00,419 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:27:00,419 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:27:00,420 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:27:06,135 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8520334813:AAHbq9dte6IPPN5IyymvjVHsln5W2POuxBE/sendMessage
+2026-04-10 02:27:26,051 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:26,051 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:26,052 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:27:26,052 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:27:26,052 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:27:26,053 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:27:31,025 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 'charmap' codec can't encode character '\U0001f4ca' in position 0: character maps to <undefined>
+2026-04-10 02:27:44,903 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\dump_payload.py', reloading
+2026-04-10 02:27:45,266 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:27:46,544 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:46,544 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:46,544 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:27:46,544 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:27:46,544 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:27:46,557 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:27:46,561 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:27:53,871 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:53,871 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:27:53,871 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:27:53,872 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:27:53,872 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:27:53,873 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:27:59,291 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8520334813:AAHbq9dte6IPPN5IyymvjVHsln5W2POuxBE/sendMessage
+2026-04-10 02:28:19,326 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:28:20,117 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:28:23,093 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:23,093 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:23,094 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:28:23,094 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:28:23,094 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:28:23,112 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:28:23,125 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:28:29,270 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:29,270 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:29,270 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:28:29,270 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:28:29,270 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:28:29,272 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:28:35,685 - ERROR - app.telegram_notifier - Failed to send Telegram notification: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8520334813:AAHbq9dte6IPPN5IyymvjVHsln5W2POuxBE/sendMessage
+2026-04-10 02:28:53,177 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\telegram_notifier.py', reloading
+2026-04-10 02:28:53,598 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:28:55,438 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:55,439 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:28:55,439 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:28:55,439 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:28:55,439 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:28:55,453 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:28:55,456 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:29:04,112 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:29:04,113 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:29:04,113 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:29:04,113 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:29:04,113 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:29:04,115 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:29:27,153 - INFO - app.telegram_notifier - Successfully dispatched Telegram notification in 6 chunks.
+2026-04-10 02:31:32,135 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:31:32,726 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:31:34,614 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:31:34,614 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:31:34,615 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:31:34,615 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:31:34,616 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:31:34,631 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:31:34,638 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:31:41,371 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:31:41,371 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:31:41,371 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:31:41,372 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:31:41,372 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:31:41,373 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:31:47,892 - INFO - app.telegram_notifier - Successfully dispatched Telegram notification in 1 chunks.
+2026-04-10 02:35:47,170 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\main.py', reloading
+2026-04-10 02:35:47,658 - INFO - werkzeug -  * Restarting with stat
+2026-04-10 02:35:49,466 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:35:49,466 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:35:49,467 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:35:49,467 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:35:49,468 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:35:49,483 - WARNING - werkzeug -  * Debugger is active!
+2026-04-10 02:35:49,486 - INFO - werkzeug -  * Debugger PIN: 127-769-319
+2026-04-10 02:35:57,100 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:35:57,101 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 02:35:57,101 - INFO - apscheduler.scheduler - Added job "scheduled_swing_job" to job store "default"
+2026-04-10 02:35:57,101 - INFO - apscheduler.scheduler - Added job "scheduled_intraday_job" to job store "default"
+2026-04-10 02:35:57,102 - INFO - apscheduler.scheduler - Scheduler started
+2026-04-10 02:35:57,103 - INFO - main - Executing automated 02:26 Swing Sweep for Telegram bot.
+2026-04-10 02:36:02,575 - INFO - main - Swing automation finished: 0 setups found, skipping Telegram message.
+2026-04-10 02:37:51,648 - INFO - werkzeug -  * Detected change in 'C:\\Users\\nanda\\OneDrive\\Desktop\\Mitesh\\Projects\\Python\\Trader\\app\\settings.py', reloading

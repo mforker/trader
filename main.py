@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
 from flasgger import Swagger, swag_from
-from app.data_fetcher import fetch_historical_data
+from app.data_fetcher import fetch_historical_data, fetch_intraday_data
 from app.strategy import apply_swing_strategy
+from app.intraday_strategy import apply_intraday_strategy
+from app.telegram_notifier import send_telegram_message
+from apscheduler.schedulers.background import BackgroundScheduler
 from app.sectors import SECTORS, INSTRUMENT_NAMES
 from app.global_macro import get_macro_state
 from app import settings
@@ -54,7 +57,7 @@ class InvalidSectorError(Exception):
     """Raised when an unrecognisable sector or no input is provided."""
     pass
 
-def _generate_calls_data():
+def _get_instruments_from_request():
     sector_param = request.args.get('sector')
     instruments_param = request.args.get('instruments')
     
@@ -189,6 +192,10 @@ def _generate_calls_data():
             "No sector or instruments provided. "
             "Add ?sector=NIFTY50 or ?sector=bank to your request."
         )
+    return sector_param, instruments
+
+def _generate_calls_data():
+    sector_param, instruments = _get_instruments_from_request()
     logger.info(f"Initiating sequence for sector param: {sector_param}")
     
     macro_context = get_macro_state()
@@ -368,6 +375,269 @@ def get_all_sectors_calls():
         "macro_evaluation": format_macro_summary(macro_context, "ALL SECTORS SCAN"),
         "summary": summary
     })
+
+def _generate_intraday_calls_data():
+    sector_param, instruments = _get_instruments_from_request()
+    logger.info(f"Initiating INTRADAY sequence for sector param: {sector_param}")
+    
+    macro_context = get_macro_state()
+    results = []
+    for instrument in instruments:
+        try:
+            df = fetch_intraday_data(instrument, interval="1minute")
+            signal_data = apply_intraday_strategy(df, macro_context)
+            
+            instrument_name = INSTRUMENT_NAMES.get(instrument, instrument)
+            results.append({
+                "name": instrument_name,
+                "instrument": instrument,
+                "signal": signal_data.get("signal", "ERROR"),
+                "confidence": signal_data.get("confidence", 0.0),
+                "entry_date": signal_data.get("entry_date", ""),
+                "buying_price": signal_data.get("buying_price", 0.0),
+                "target_price": signal_data.get("target_price", 0.0),
+                "stop_loss": signal_data.get("stop_loss", 0.0),
+                "expected_target_date": signal_data.get("expected_target_date", ""),
+                "reason": signal_data.get("reason", "Unknown")
+            })
+        except Exception as e:
+            results.append({
+                "name": instrument,
+                "instrument": instrument,
+                "signal": "ERROR",
+                "confidence": 0.0,
+                "entry_date": "",
+                "buying_price": 0.0,
+                "target_price": 0.0,
+                "stop_loss": 0.0,
+                "expected_target_date": "",
+                "reason": str(e)
+            })
+            
+    logger.info(f"Analyzed {len(instruments)} intraday instruments. Discovered {len([r for r in results if r['signal'] in ['BUY', 'SELL']])} active trade setups.")
+    results.sort(key=lambda x: x.get("name", x.get("instrument", "")))
+    return {"macro_context": macro_context, "results": results, "sector_analyzed": sector_param}
+
+@app.route('/intraday/calls/buy', methods=['GET'])
+@swag_from(get_swagger_schema("Get ONLY INTRADAY BUY calls", "Analyzes live intraday data via Upstox API using VWAP/ORB Strategy."))
+def get_intraday_buy_calls():
+    try:
+        data = _generate_intraday_calls_data()
+    except InvalidSectorError as e:
+        return jsonify({"error": str(e)}), 400
+    buy_calls = [r for r in data["results"] if r.get('signal') == 'BUY']
+    return jsonify({
+        "macro_evaluation": format_macro_summary(data["macro_context"], data["sector_analyzed"]),
+        "results": buy_calls
+    })
+
+@app.route('/intraday/calls/sell', methods=['GET'])
+@swag_from(get_swagger_schema("Get ONLY INTRADAY SELL calls", "Analyzes live intraday data via Upstox API using VWAP/ORB Strategy."))
+def get_intraday_sell_calls():
+    try:
+        data = _generate_intraday_calls_data()
+    except InvalidSectorError as e:
+        return jsonify({"error": str(e)}), 400
+    sell_calls = [r for r in data["results"] if r.get('signal') == 'SELL']
+    return jsonify({
+        "macro_evaluation": format_macro_summary(data["macro_context"], data["sector_analyzed"]),
+        "results": sell_calls
+    })
+
+@app.route('/intraday/calls/all-sectors', methods=['GET'])
+@swag_from({
+    "tags": ["Trading"],
+    "summary": "Get INTRADAY calls across all sectors",
+    "description": "Scans every defined sector and returns a dictionary grouped by sector featuring active BUY/SELL intraday signals."
+})
+def get_intraday_all_sectors_calls():
+    macro_context = get_macro_state()
+    summary = {}
+    seen_instruments = set()
+    for sector_name, instruments in SECTORS.items():
+        results = []
+        for instrument in instruments:
+            if instrument in seen_instruments:
+                continue
+            seen_instruments.add(instrument)
+            try:
+                df = fetch_intraday_data(instrument, interval="1minute")
+                signal_data = apply_intraday_strategy(df, macro_context)
+                
+                signal = signal_data.get("signal", "ERROR")
+                if signal in ['BUY', 'SELL']:
+                    instrument_name = INSTRUMENT_NAMES.get(instrument, instrument)
+                    results.append({
+                        "name": instrument_name,
+                        "instrument": instrument,
+                        "signal": signal,
+                        "confidence": signal_data.get("confidence", 0.0),
+                        "entry_date": signal_data.get("entry_date", ""),
+                        "buying_price": signal_data.get("buying_price", 0.0),
+                        "target_price": signal_data.get("target_price", 0.0),
+                        "stop_loss": signal_data.get("stop_loss", 0.0),
+                        "expected_target_date": signal_data.get("expected_target_date", ""),
+                        "reason": signal_data.get("reason", "Unknown")
+                    })
+            except Exception:
+                pass
+        summary[sector_name] = results
+        
+    logger.info("Successfully fetched intraday calls across all isolated sectors.")
+    return jsonify({
+        "macro_evaluation": format_macro_summary(macro_context, "ALL SECTORS SCAN"),
+        "summary": summary
+    })
+
+
+def scheduled_intraday_job():
+    logger.info(f"Executing automated {settings.AUTOMATION_INTRADAY_TIME} Intraday Sweep for Telegram bot.")
+    macro_context = get_macro_state()
+    
+    # We want to scan NIFTYBANK and NIFTYPSUBANK as requested
+    target_sectors = ["NIFTYBANK", "NIFTYPSUBANK"]
+    instruments_to_scan = []
+    
+    seen = set()
+    for sector in target_sectors:
+        if sector in SECTORS:
+            for inst in SECTORS[sector]:
+                if inst not in seen:
+                    seen.add(inst)
+                    instruments_to_scan.append(inst)
+                    
+    results = []
+    for instrument in instruments_to_scan:
+        try:
+            df = fetch_intraday_data(instrument, interval="1minute")
+            signal_data = apply_intraday_strategy(df, macro_context)
+            signal = signal_data.get("signal", "HOLD")
+            
+            if signal in ['BUY', 'SELL']:
+                inst_name = INSTRUMENT_NAMES.get(instrument, instrument)
+                import html
+                results.append({
+                    "name": html.escape(str(inst_name)),
+                    "instrument": html.escape(str(instrument)),
+                    "signal": html.escape(str(signal)),
+                    "confidence": signal_data.get("confidence", 0.0),
+                    "entry_date": html.escape(str(signal_data.get("entry_date", ""))),
+                    "buying_price": signal_data.get("buying_price", 0.0),
+                    "target_price": signal_data.get("target_price", 0.0),
+                    "stop_loss": signal_data.get("stop_loss", 0.0),
+                    "expected_target_date": html.escape(str(signal_data.get("expected_target_date", ""))),
+                    "reason": html.escape(str(signal_data.get("reason", "Unknown")))
+                })
+        except Exception as e:
+            logger.error(f"Error scanning {instrument} in scheduled job: {e}")
+            
+    if results:
+        results.sort(key=lambda x: x.get("confidence", 0.0), reverse=True)
+        top_results = results[:3]
+        formatted_messages = []
+        for r in top_results:
+            msg = (
+                f"<b>{r['signal']}</b>: {r['name']} ({r['instrument']})\n"
+                f"Confidence: {r['confidence']}%\n"
+                f"Entry Date: {r['entry_date']}\n"
+                f"Entry Price: ₹{r['buying_price']}\n"
+                f"Target: ₹{r['target_price']}\n"
+                f"Stop Loss: ₹{r['stop_loss']}\n"
+                f"Expected Target Date: {r['expected_target_date']}\n"
+                f"Reason: {r['reason']}"
+            )
+            formatted_messages.append(msg)
+            
+        message = f"🚨 <b>Live Intraday Setups Found ({settings.AUTOMATION_INTRADAY_TIME}) - TOP 3</b> 🚨\n\n" + "\n\n".join(formatted_messages)
+        send_telegram_message(message)
+    else:
+        logger.info("Automation finished: 0 setups found, skipping Telegram message.")
+
+def scheduled_swing_job():
+    logger.info(f"Executing automated {settings.AUTOMATION_SWING_TIME} Swing Sweep for Telegram bot.")
+    macro_context = get_macro_state()
+    
+    # We want to scan NIFTY50, NIFTYBANK, and NIFTYPSUBANK as requested
+    target_sectors = ["NIFTY50", "NIFTYBANK", "NIFTYPSUBANK"]
+    instruments_to_scan = []
+    
+    seen = set()
+    for sector in target_sectors:
+        if sector in SECTORS:
+            for inst in SECTORS[sector]:
+                if inst not in seen:
+                    seen.add(inst)
+                    instruments_to_scan.append(inst)
+                    
+    results = []
+    for instrument in instruments_to_scan:
+        try:
+            df = fetch_historical_data(instrument, days_back=settings.HISTORICAL_DATA_DAYS)
+            signal_data = apply_swing_strategy(df, macro_context)
+            signal = signal_data.get("signal", "HOLD")
+            
+            if signal == 'BUY':
+                inst_name = INSTRUMENT_NAMES.get(instrument, instrument)
+                import html
+                results.append({
+                    "name": html.escape(str(inst_name)),
+                    "instrument": html.escape(str(instrument)),
+                    "signal": html.escape(str(signal)),
+                    "confidence": signal_data.get("confidence", 0.0),
+                    "entry_date": html.escape(str(signal_data.get("entry_date", ""))),
+                    "buying_price": signal_data.get("buying_price", 0.0),
+                    "target_price": signal_data.get("target_price", 0.0),
+                    "stop_loss": signal_data.get("stop_loss", 0.0),
+                    "expected_target_date": html.escape(str(signal_data.get("expected_target_date", ""))),
+                    "reason": html.escape(str(signal_data.get("reason", "Unknown")))
+                })
+        except Exception as e:
+            logger.error(f"Error scanning {instrument} in swing scheduled job: {e}")
+            
+    if results:
+        results.sort(key=lambda x: x.get("confidence", 0.0), reverse=True)
+        top_results = results[:3]
+        formatted_messages = []
+        for r in top_results:
+            msg = (
+                f"<b>{r['signal']}</b>: {r['name']} ({r['instrument']})\n"
+                f"Confidence: {r['confidence']}%\n"
+                f"Entry Date: {r['entry_date']}\n"
+                f"Entry Price: ₹{r['buying_price']}\n"
+                f"Target: ₹{r['target_price']}\n"
+                f"Stop Loss: ₹{r['stop_loss']}\n"
+                f"Expected Target Date: {r['expected_target_date']}\n"
+                f"Reason: {r['reason']}"
+            )
+            formatted_messages.append(msg)
+            
+        message = f"📊 <b>Swing Setups Found ({settings.AUTOMATION_SWING_TIME}) - TOP 3</b> 📊\n\n" + "\n\n".join(formatted_messages)
+        send_telegram_message(message)
+    else:
+        logger.info("Swing automation finished: 0 setups found, skipping Telegram message.")
+
+# Initialize APScheduler globally
+scheduler = BackgroundScheduler(timezone="Asia/Kolkata")
+
+swing_h, swing_m = settings.AUTOMATION_SWING_TIME.split(":")
+intra_h, intra_m = settings.AUTOMATION_INTRADAY_TIME.split(":")
+
+scheduler.add_job(
+    scheduled_swing_job, 
+    'cron', 
+    day_of_week='mon-fri', 
+    hour=int(swing_h), 
+    minute=int(swing_m)
+)
+
+scheduler.add_job(
+    scheduled_intraday_job, 
+    'cron', 
+    day_of_week='mon-fri', 
+    hour=int(intra_h), 
+    minute=int(intra_m)
+)
+scheduler.start()
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

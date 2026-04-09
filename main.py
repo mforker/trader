@@ -203,9 +203,11 @@ def _generate_calls_data():
             
             instrument_name = INSTRUMENT_NAMES.get(instrument, instrument)
             results.append({
-                "instrument": instrument,
                 "name": instrument_name,
+                "instrument": instrument,
                 "signal": signal_data.get("signal", "ERROR"),
+                "confidence": signal_data.get("confidence", 0.0),
+                "entry_date": signal_data.get("entry_date", ""),
                 "buying_price": signal_data.get("buying_price", 0.0),
                 "target_price": signal_data.get("target_price", 0.0),
                 "stop_loss": signal_data.get("stop_loss", 0.0),
@@ -214,14 +216,23 @@ def _generate_calls_data():
             })
         except Exception as e:
             results.append({
+                "name": instrument,
                 "instrument": instrument,
                 "signal": "ERROR",
-                "reason": str(e),
-                "last_price": None
+                "confidence": 0.0,
+                "entry_date": "",
+                "buying_price": 0.0,
+                "target_price": 0.0,
+                "stop_loss": 0.0,
+                "expected_target_date": "",
+                "reason": str(e)
             })
             
     logger.info(f"Analyzed {len(instruments)} instruments. Discovered {len([r for r in results if r['signal'] in ['BUY', 'SELL']])} active trade setups.")
             
+    # Always sort by name so the output order is consistent (alphabetical) for all endpoints
+    results.sort(key=lambda x: x.get("name", x.get("instrument", "")))
+    
     return {"macro_context": macro_context, "results": results, "sector_analyzed": sector_param}
 
 def format_macro_summary(macro_context, sector_analyzed=None):
@@ -337,9 +348,11 @@ def get_all_sectors_calls():
                 if signal in ['BUY', 'SELL']:
                     instrument_name = INSTRUMENT_NAMES.get(instrument, instrument)
                     results.append({
-                        "instrument": instrument,
                         "name": instrument_name,
+                        "instrument": instrument,
                         "signal": signal,
+                        "confidence": signal_data.get("confidence", 0.0),
+                        "entry_date": signal_data.get("entry_date", ""),
                         "buying_price": signal_data.get("buying_price", 0.0),
                         "target_price": signal_data.get("target_price", 0.0),
                         "stop_loss": signal_data.get("stop_loss", 0.0),

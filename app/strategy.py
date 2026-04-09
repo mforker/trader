@@ -135,17 +135,53 @@ def apply_swing_strategy(df: pd.DataFrame, macro_context: dict = None) -> dict:
     # Calculate exactly using trading days (skipping weekends)
     expected_date = (base_date + BusinessDay(n=calculated_target_days)).strftime("%Y-%m-%d")
 
+    entry_date = last_row['timestamp'].strftime("%Y-%m-%d") if 'timestamp' in last_row and pd.notnull(last_row['timestamp']) else base_date.strftime("%Y-%m-%d")
+
+    # ---------------- MACRO & BETA OVERRIDE LOGIC ----------------
+    macro_state = macro_context.get('global_macro_state', "NEUTRAL") if macro_context else "NEUTRAL"
+    ai_sent = macro_context.get('ai_news_sentiment', "NEUTRAL") if macro_context else "NEUTRAL"
+
+    # ---------------- CONFIDENCE SCORING ----------------
+    confidence = 0.0
+    rsi_overbought = last_row['RSI_14'] >= 75
+    trend_broken = buy_price < last_row['EMA_50']
+    hit_upper_band = buy_price >= last_row['BB_UPPER']
+
+    if is_buy:
+        confidence = 40.0
+        if base_trend_up: confidence += 20.0
+        if rsi_cooled: confidence += 10.0
+        if bounced_off_lower: confidence += 20.0
+        elif near_lower_band: confidence += 10.0
+        
+        if macro_state == "BULLISH": confidence += 10.0
+        elif macro_state == "BEARISH": confidence -= 15.0
+        
+        if ai_sent == "BULLISH": confidence += 5.0
+        elif ai_sent == "BEARISH": confidence -= 5.0
+        
+        if 0.5 <= beta <= 1.2: confidence += 5.0
+        elif beta > 1.5: confidence -= 10.0
+    elif trend_broken or rsi_overbought or hit_upper_band:
+        confidence = 50.0
+        if trend_broken: confidence += 20.0
+        if rsi_overbought: confidence += 15.0
+        if hit_upper_band: confidence += 15.0
+        if macro_state == "BEARISH": confidence += 10.0
+        elif macro_state == "BULLISH": confidence -= 10.0
+        
+    confidence = round(max(0.0, min(100.0, confidence)), 1)
+
     fields = {
         "buying_price": buy_price,
         "target_price": target_price,
         "stop_loss": stop_loss,
         "expected_target_date": expected_date,
+        "entry_date": entry_date,
+        "confidence": confidence,
         "beta": beta
     }
 
-    # ---------------- MACRO & BETA OVERRIDE LOGIC ----------------
-    macro_state = macro_context.get('global_macro_state', "NEUTRAL") if macro_context else "NEUTRAL"
-    ai_sent = macro_context.get('ai_news_sentiment', "NEUTRAL") if macro_context else "NEUTRAL"
     override_reason = ""
     
     if is_buy and macro_state == "BEARISH":
@@ -166,6 +202,7 @@ def apply_swing_strategy(df: pd.DataFrame, macro_context: dict = None) -> dict:
             f"above its core 50-day EMA trendline ({last_row['EMA_50']:.1f}). Over the last week, price consolidated, "
             f"statistically bouncing off the Lower Bollinger Band floor ({last_row['BB_LOWER']:.1f}) indicating extreme value. "
             f"RSI confirms cooling momentum ({last_row['RSI_14']:.1f}). "
+            f"Global/National News Context: The broader macro market state is currently assessed as {macro_state}, while Artificial Intelligence analysis of recent financial news indicates a {ai_sent} sentiment. "
             f"Action: Initiating an '{risk_profile}' profile trade with calculated Beta [{beta}]. "
             f"Setting aggressive target at +{target_atr_mult}x ATR ({target_price}) and protective Stop-Loss at -{stop_atr_mult}x ATR ({stop_loss})."
         )
@@ -190,6 +227,7 @@ def apply_swing_strategy(df: pd.DataFrame, macro_context: dict = None) -> dict:
 
         reason = (
             f"Strategy Evaluation: Exit signaled immediately because {broken_reason}. "
+            f"Global/National News Context: Overall macro state is assessed as {macro_state} with AI news sentiment highlighting {ai_sent} conditions. "
             f"Holding this stock further carries exceptional risk down to the baseline. "
             f"Action: Liquidating under current profile protocols."
         )

@@ -494,8 +494,8 @@ def scheduled_intraday_job():
     logger.info(f"Executing automated {settings.AUTOMATION_INTRADAY_TIME} Intraday Sweep for Telegram bot.")
     macro_context = get_macro_state()
     
-    # We want to scan NIFTYBANK and NIFTYPSUBANK as requested
-    target_sectors = ["NIFTYBANK", "NIFTYPSUBANK"]
+    # We want to scan all sectors as requested
+    target_sectors = list(SECTORS.keys())
     instruments_to_scan = []
     
     seen = set()
@@ -557,8 +557,8 @@ def scheduled_swing_job():
     logger.info(f"Executing automated {settings.AUTOMATION_SWING_TIME} Swing Sweep for Telegram bot.")
     macro_context = get_macro_state()
     
-    # We want to scan NIFTY50, NIFTYBANK, and NIFTYPSUBANK as requested
-    target_sectors = ["NIFTY50", "NIFTYBANK", "NIFTYPSUBANK"]
+    # We want to scan all sectors as requested
+    target_sectors = list(SECTORS.keys())
     instruments_to_scan = []
     
     seen = set()
@@ -630,11 +630,12 @@ scheduler.add_job(
     minute=int(swing_m)
 )
 
+end_h = min(23, int(intra_h) + 4)
 scheduler.add_job(
     scheduled_intraday_job, 
     'cron', 
     day_of_week='mon-fri', 
-    hour=int(intra_h), 
+    hour=f'{int(intra_h)}-{end_h}', 
     minute=int(intra_m)
 )
 scheduler.start()

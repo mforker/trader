@@ -36,5 +36,5 @@ BACKTEST_TARGET_DATE = None
 
 # Automation Schedule Times (Format: "HH:MM" in 24-hour time)
 # Note: Automated jobs run strictly from Monday to Friday.
-AUTOMATION_SWING_TIME = "02:39"
+AUTOMATION_SWING_TIME = "03:15"
 AUTOMATION_INTRADAY_TIME = "10:00"
